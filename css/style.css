@@ -103,11 +103,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   height: fit-content;
 }
-.fh5co-nav .top-menu img{
-height:60px;
-padding: 0;
-margin: 0;
-}
+.fh5co-nav .top-menu img{height: 40px;padding: 0;margin: 0;}
 .fh5co-nav .top {
   background: #25D366;
   padding: 7px 0;
@@ -176,7 +172,7 @@ align-items: center;
 }
 .fh5co-nav ul li a {
   font-size: 13px;
-  padding: 30px 15px;
+  padding: 3px 15px;
   text-transform: uppercase;
   letter-spacing: 2px;
   -webkit-transition: 0.5s;
@@ -358,7 +354,7 @@ align-items: center;
 }
 
 .fh5co-cover {
-  height: 800px;
+  height: 440px;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -387,10 +383,10 @@ align-items: center;
 .fh5co-cover .display-t,
 .fh5co-cover .display-tc {
   z-index: 9;
-  height: 700px;
+  height: 500px;
   display: table;
   width: 100%;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
@@ -508,7 +504,7 @@ align-items: center;
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 20px;
-  font-size: 54px;
+  font-size: 44px;
   line-height: 1.3;
   text-transform: uppercase;
   font-weight: 400;
@@ -523,7 +519,7 @@ align-items: center;
 #fh5co-header .display-tc h2,
 #fh5co-counter .display-tc h2,
 .fh5co-cover .display-tc h2 {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.5;
   margin-bottom: 30px;
 }
@@ -561,7 +557,10 @@ align-items: center;
 .fh5co-bg-section {
   background: rgba(0, 0, 0, 0.05);
 }
+.fh5co-services .row {
+  align-items: stretch;
 
+}
 #fh5co-services,
 #fh5co-started,
 #fh5co-trainer,
@@ -574,6 +573,8 @@ align-items: center;
   padding: 7em 0;
   clear: both;
 }
+
+div#fh5co-services {}
 @media screen and (max-width: 768px) {
   #fh5co-services,
   #fh5co-started,
@@ -1710,3 +1711,15 @@ align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
+
+@media (min-width: 764px) {
+.fh5co-services{
+    padding: 12em 0 0;}
+    #fh5co-footer .row-pb-md {
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+
+
