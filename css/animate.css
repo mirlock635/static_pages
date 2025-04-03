@@ -17,9 +17,10 @@ Copyright (c) 2015 Daniel Eden
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
   -webkit-animation-fill-mode: both;
+  animation-timing-function: ease-in-out; /* Smooth transition */
+
   animation-fill-mode: both;
 }
-
 .animated.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
