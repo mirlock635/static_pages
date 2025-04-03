@@ -385,10 +385,13 @@ align-items: center;
   width: 100%;
   /* margin-top: 100px; */
 }
+
+
+
 @media screen and (max-width: 768px) {
   .fh5co-cover .display-t,
   .fh5co-cover .display-tc {
-    height: 400px;
+    height: 600px;
   }
 }
 .fh5co-cover.fh5co-cover-sm {
@@ -506,6 +509,7 @@ align-items: center;
   text-transform: uppercase;
   font-weight: 400;
 }
+
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
@@ -998,10 +1002,10 @@ div#fh5co-services {}
   #fh5co-portfolio-list li a .case-studies-summary h2 {
     font-size: 20px;
   }
+}#fh5co-portfolio-list li.two-third {
+  width: 23.8%;
 }
-#fh5co-portfolio-list li.two-third {
-  width: 48.6%;
-}
+
 @media screen and (max-width: 768px) {
   #fh5co-portfolio-list li.two-third {
     width: 49%;
@@ -1494,7 +1498,7 @@ div#fh5co-services {}
 .fh5co-nav-toggle {
   position: absolute;
   right: 20px;
-  top: 60px;
+  top: 50px;
   z-index: 21;
   padding: 0;
   display: block;
