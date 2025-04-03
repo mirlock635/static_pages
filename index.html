@@ -105,7 +105,7 @@
 						<div class="display-tc animate-box" data-animate-effect="fadeIn">
 							<h1 style="font-weight: 600">Bienvenue chez FitGym</h1>
 							<h2>Votre destination ultime pour un mode de vie sain et actif</h2>
-							<p><a href="" class="btn btn-primary popup-vimeo">Contactez-nous	</a></p>
+							<p><a href="#" class="btn btn-primary popup-vimeo">Contactez-nous	</a></p>
 						</div>
 					</div>
 				</div>
@@ -846,11 +846,36 @@
 	<!-- countTo -->
 	<script src="js/jquery.countTo.js"></script>
 	<!-- Magnific Popup -->
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/magnific-popup-options.js"></script>
-	<!-- Main -->
+	
 	<script src="js/main.js"></script>
-
+	<script defer>
+		document.addEventListener('click', function(e) {
+		  // Check if clicked element is a nav link OR inside the dropdown
+		  if (e.target.closest('#fh5co-offcanvas a') ) {
+			// Find the toggle button and trigger click
+			const toggleBtn = document.querySelector('.js-fh5co-nav-toggle');
+			if (toggleBtn && getComputedStyle(toggleBtn).display !== 'none') {
+			  toggleBtn.click(); // Programmatically close menu
+			}
+			
+			// Optional: Smooth scroll to section
+			const target = e.target.getAttribute('href');
+			if (target && target.startsWith('#')) {
+			  e.preventDefault();
+			  document.querySelector(target)?.scrollIntoView({ behavior: 'smooth' });
+			}
+		  }
+		});
+	  
+		// Close menu when clicking the toggle button (X)
+		const toggleBtn = document.querySelector('.js-fh5co-nav-toggle');
+		if (toggleBtn) {
+		  toggleBtn.addEventListener('click', function() {
+			document.body.classList.toggle('fh5co-offcanvas-visible');
+		  });
+		}
+	  
+		  </script>
 
 	</body>
 </html>
